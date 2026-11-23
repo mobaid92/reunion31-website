@@ -108,29 +108,6 @@ collections:
       - { label: Cover photo, name: cover, widget: image, required: false, hint: Used on the home page tiles. If empty, the first listing photo is used. }
       - { label: Order, name: order, widget: number, value_type: int, default: 20 }
 
-  # ---------------- Photos & videos page ----------------
-  - name: gallery
-    label: Photos & videos
-    label_singular: Post
-    description: Posts for the Photos & videos page. The newest four also show on the home page.
-    icon: photo_library
-    folder: content/gallery
-    format: json
-    extension: json
-    create: true
-    delete: true
-    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
-    identifier_field: title
-    summary: "{{date}} · {{title}}"
-    sortable_fields: [date, title]
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD" }
-      - { label: Caption, name: caption, widget: string, required: false }
-      - { label: Photo, name: image, widget: image, required: false, hint: For a video post, this is used as the cover. }
-      - { label: Video file, name: video, widget: file, required: false, hint: Short clip under 25 MB. }
-      - { label: Video link, name: video_url, widget: string, required: false, hint: YouTube, Instagram reel or TikTok link. }
-
   # ---------------- Pages & settings ----------------
   - name: pages
     label: Pages & settings

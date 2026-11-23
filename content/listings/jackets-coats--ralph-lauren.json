@@ -3,8 +3,6 @@
   "category": "jackets-coats",
   "brand_note": "",
   "styles": [
-    "Performance Full Zip Jacket",
-    "Duffle Coat",
     "Polo by Ralph Lauren Men's Black Jacket"
   ],
   "description": "",
@@ -16,6 +14,6 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 98,
+  "sort": 99,
   "videos": []
 }

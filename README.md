@@ -2,7 +2,7 @@
 
 Multi-page wholesale site with an admin panel at `/admin` for uploading photos and videos and editing every page, with no code.
 
-**Pages:** Home · Catalogue (12 categories, 69 brand listings, with search and filters) · Photos & videos · About · How to order (steps + FAQ) · Contact (quote form)
+**Pages:** Home · Catalogue (12 categories, 69 brand listings, with search and filters) · About · How to order (steps + FAQ) · Contact (quote form)
 
 ## How it works
 
@@ -48,7 +48,6 @@ Buy `reunion31.com` or similar, then go to **Cloudflare → your Pages project �
 ## Day-to-day: adding photos and videos
 - **New stock photos:** Admin → *Catalogue listings* → open a listing → *Photos* → add. The first photo is the cover.
 - **Video:** clips under 25 MB (about 30 seconds) upload directly. For longer ones, post to YouTube or Instagram and paste the link in *Video link*.
-- **Warehouse posts:** Admin → *Photos & videos* → New. The newest four also appear on the home page.
 - **Out of stock:** untick *In stock* to hide a listing without deleting it.
 - **Home page picks:** tick *Feature on home page* on a listing that has a photo.
 

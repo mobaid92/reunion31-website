@@ -3,10 +3,6 @@
   "category": "quarter-zips",
   "brand_note": "",
   "styles": [
-    "1/4 Zip",
-    "1/4 Zip Sweater",
-    "Quarter Zip Knit Sweater",
-    "Quarter Zip Pima Cotton Cashmere",
     "Tommy Hilfiger 1/4 Zip Sweater",
     "Tommy Hilfiger Quarter Zip Knit Sweater",
     "Tommy Hilfiger Quarter Zip Pima Cotton Cashmere Sw"
@@ -24,6 +20,6 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 95,
+  "sort": 97,
   "videos": []
 }

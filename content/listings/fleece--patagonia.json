@@ -3,14 +3,6 @@
   "category": "fleece",
   "brand_note": "",
   "styles": [
-    "Fleece Pullover",
-    "Fleece Quarter Zip Pullover",
-    "Women's Grey Fleece Hooded Jacket",
-    "Women's Fleece Jacket",
-    "1/4 Zip Pullover Fleece",
-    "Women's Fleece Hoodie",
-    "Women's Fleece Pullover",
-    "Fleeces",
     "Patagonia Fleece Pullover",
     "Patagonia Women's Fleece Jacket",
     "Patagonia Fleece Pullover XXS",
@@ -31,6 +23,6 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 90,
+  "sort": 96,
   "videos": []
 }

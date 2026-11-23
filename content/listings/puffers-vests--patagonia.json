@@ -3,14 +3,6 @@
   "category": "puffers-vests",
   "brand_note": "",
   "styles": [
-    "Women's Down Jacket",
-    "Women's Down Vest",
-    "Puffer Jackets",
-    "Men's Hooded Puffer Jacket",
-    "Hooded Parka Jacket",
-    "Men's Quilted Jacket",
-    "Men's Down Jacket",
-    "Quilted Jacket",
     "Patagonia Women's Down Jacket",
     "Patagonia Womens/Femmes Quilted Jacket",
     "Patagonia \"STONKA PINE\" \"PREMULLER\" Puffer Jacket",
@@ -18,7 +10,6 @@
   ],
   "description": "",
   "photos": [
-    "/images/uploads/patagonia-vest-and-jacket.jpg",
     "/images/uploads/fleek/9632069386478-1.jpg",
     "/images/uploads/fleek/9632069386478-2.jpg",
     "/images/uploads/fleek/9632069026030-1.jpg",
@@ -35,6 +26,6 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 90,
+  "sort": 94,
   "videos": []
 }

@@ -3,13 +3,7 @@
   "category": "tops-shirts",
   "brand_note": "",
   "styles": [
-    "Tops",
     "Assorted Women's Tops and T-Shirts",
-    "Long Sleeve T-Shirts",
-    "Night wear",
-    "Half and full sleeves Tops",
-    "Tops & Dresses",
-    "Tops, Dresses, Camisoles & Shirts",
     "Y2K Long Sleeve T-Shirts",
     "Y2K night wear",
     "Y2K Tops",
@@ -18,7 +12,6 @@
   ],
   "description": "",
   "photos": [
-    "/images/uploads/womens-tops.jpg",
     "/images/uploads/fleek/9553419337966-1.jpg",
     "/images/uploads/fleek/9553468162286-1.jpg",
     "/images/uploads/fleek/9527198482670-1.jpg",
@@ -35,7 +28,7 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 91,
+  "sort": 92,
   "videos": [
     "/images/uploads/fleek/9553419337966.mp4",
     "/images/uploads/fleek/9553468162286.mp4"

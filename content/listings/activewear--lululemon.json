@@ -3,13 +3,10 @@
   "category": "activewear",
   "brand_note": "",
   "styles": [
-    "Mixed Bundle",
-    "Activewear",
     "Lululemon Mix"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/lululemon-activewear.jpg",
     "/images/uploads/fleek/9541687443694-1.jpg",
     "/images/uploads/fleek/9525425602798-1.jpg",
     "/images/uploads/fleek/9525425602798-2.jpg"
@@ -18,7 +15,7 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 97,
+  "sort": 98,
   "videos": [
     "/images/uploads/fleek/9541687443694.mp4",
     "/images/uploads/fleek/9525425602798.mp4"

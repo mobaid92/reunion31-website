@@ -3,16 +3,6 @@
   "category": "puffers-vests",
   "brand_note": "",
   "styles": [
-    "Button Down Shirts",
-    "Puffer Jackets",
-    "Puffer Vest",
-    "V-Neck Plaid Vest",
-    "V-Neck Vest",
-    "Puffer Bomber Jacket",
-    "Quilted Vest",
-    "Navy Blue Down Jacket",
-    "Camo Puffer Jacket",
-    "Button Down",
     "Polo Jeans Co. Ralph Lauren Outerwear Puffer Jacke",
     "Polo Sport Ralph Lauren Puffer Vest",
     "Polo Sport Ralph Lauren Red Puffer Vest",
@@ -22,8 +12,6 @@
   ],
   "description": "",
   "photos": [
-    "/images/uploads/ralph-lauren-puffer-vests.jpg",
-    "/images/uploads/ralph-lauren-puffer-vests-hero.jpg",
     "/images/uploads/fleek/9592527913198-1.jpg",
     "/images/uploads/fleek/9592527913198-2.jpg",
     "/images/uploads/fleek/9592497438958-1.jpg",
@@ -39,6 +27,6 @@
   "video_url": "",
   "featured": true,
   "in_stock": true,
-  "sort": 80,
+  "sort": 94,
   "videos": []
 }

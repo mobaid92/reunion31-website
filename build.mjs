@@ -25,7 +25,6 @@ const ORDER = read("content/order.json");
 const CATS = readDir("content/categories").sort((a, b) => (a.order ?? 99) - (b.order ?? 99) || a.name.localeCompare(b.name));
 const LISTINGS = readDir("content/listings").filter(l => l.in_stock !== false)
   .sort((a, b) => (a.sort ?? 50) - (b.sort ?? 50) || String(a.title).localeCompare(String(b.title)));
-const GALLERY = readDir("content/gallery").sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
 
 // ---------- helpers ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -59,7 +58,7 @@ const BRANDS = [...new Set(LISTINGS.flatMap(l => String(l.title).split(/\s*\/\s*
 const brandCount = BRANDS.length;
 
 // ---------- layout ----------
-const NAV = [["index.html", "Home"], ["catalogue.html", "Catalogue"], ["gallery.html", "Photos & videos"], ["about.html", "About"], ["how-to-order.html", "How to order"], ["contact.html", "Contact"]];
+const NAV = [["index.html", "Home"], ["catalogue.html", "Catalogue"], ["about.html", "About"], ["how-to-order.html", "How to order"], ["contact.html", "Contact"]];
 function layout(file, title, desc, body, extraHead = "") {
   const full = file === "index.html" ? `${S.business_name} | ${S.tagline}` : `${title} | ${S.business_name}`;
   const canonical = S.site_url ? `<link rel="canonical" href="${esc(S.site_url.replace(/\/$/, "") + "/" + (file === "index.html" ? "" : file))}">` : "";
@@ -181,7 +180,6 @@ const pages = {};
     const cover = c.cover || LISTINGS.filter(l => l.category === c._slug).map(l => photosOf(l)[0]).find(Boolean);
     return `<a class="cat-tile${cover ? "" : " no-photo"}" href="/catalogue.html?cat=${esc(c._slug)}">${cover ? img(cover, c.name) : ""}<span class="cat-tile-label"><b>${esc(c.name)}</b><small>${n} brand${n === 1 ? "" : "s"}</small></span></a>`;
   }).join("");
-  const latest = GALLERY.slice(0, 4);
   pages["index.html"] = layout("index.html", "Home", HOME.hero_text, `
 <section class="hero"><div class="wrap hero-grid">
   <div>
@@ -208,23 +206,8 @@ ${feat.length ? `<section><div class="wrap">
   <ul class="brand-wall">${BRANDS.map(b => `<li><a href="/catalogue.html?brand=${encodeURIComponent(b)}">${esc(b)}</a></li>`).join("")}</ul>
   ${(HOME.features || []).length ? `<div class="facts">${HOME.features.map(f => `<div><h3>${esc(f.title)}</h3><p>${esc(f.text)}</p></div>`).join("")}</div>` : ""}
 </div></section>
-${latest.length ? `<section><div class="wrap">
-  <div class="sec-head"><h2>Fresh from the warehouse</h2><a class="link" href="/gallery.html">All photos & videos →</a></div>
-  <div class="media-grid">${latest.map(mediaItem).join("")}</div>
-</div></section>` : ""}
 ${ctaBand()}
 ${dialog}${dataScript(LISTINGS)}`);
-}
-
-function mediaItem(g) {
-  let media;
-  if (g.video) media = videoTag(g.video, g.image);
-  else if (g.video_url) media = embed(g.video_url);
-  else if (g.image) media = `<button class="zoom" type="button" data-src="${esc(g.image)}" aria-label="Enlarge photo: ${esc(g.title)}">${img(g.image, g.title)}</button>`;
-  else media = "";
-  const d = g.date ? new Date(g.date) : null;
-  const ds = d && !isNaN(d) ? d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "";
-  return `<figure class="media-item${g.video || g.video_url ? " is-video" : ""}">${media}<figcaption>${ds ? `<time>${esc(ds)}</time>` : ""}<b>${esc(g.title)}</b>${g.caption ? `<span>${esc(g.caption)}</span>` : ""}</figcaption></figure>`;
 }
 
 // CATALOGUE
@@ -254,16 +237,6 @@ ${pageHead("Catalogue", "What we have in stock", "Stock changes daily. Prices de
 ${ctaBand()}
 ${dialog}${dataScript(LISTINGS)}`);
 }
-
-// GALLERY
-pages["gallery.html"] = layout("gallery.html", "Photos & videos", "Photos and videos of real ReUnion 31 stock and bundles.", `
-${pageHead("Photos & videos", "Straight from the warehouse", "Real photos and videos of the stock we sort and ship. Ask for a video of your own bundle before you pay.")}
-<section class="tight"><div class="wrap">
-  ${GALLERY.length ? `<div class="media-filter chips" role="group" aria-label="Show"><button type="button" class="chip" data-show="all" aria-pressed="true">All</button><button type="button" class="chip" data-show="photo" aria-pressed="false">Photos</button><button type="button" class="chip" data-show="video" aria-pressed="false">Videos</button></div>
-  <div class="media-grid big">${GALLERY.map(mediaItem).join("")}</div>` : `<p class="empty">New photos and videos are coming soon.</p>`}
-  ${igHandle ? `<p class="more-ig">More on Instagram: <a href="https://www.instagram.com/${esc(igHandle)}" target="_blank" rel="noopener">@${esc(igHandle)}</a></p>` : ""}
-</div></section>
-${ctaBand()}`);
 
 // ABOUT
 pages["about.html"] = layout("about.html", "About", ABOUT.intro, `
@@ -344,4 +317,4 @@ if (S.site_url) {
   fs.writeFileSync(path.join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${Object.keys(pages).filter(f => !/^(404|thanks)/.test(f)).map(f => `<url><loc>${base}/${f === "index.html" ? "" : f}</loc></url>`).join("")}</urlset>\n`);
   fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nDisallow: /admin/\nSitemap: ${base}/sitemap.xml\n`);
 }
-console.log(`Built ${Object.keys(pages).length} pages: ${CATS.length} categories, ${LISTINGS.length} listings, ${GALLERY.length} media posts.`);
+console.log(`Built ${Object.keys(pages).length} pages: ${CATS.length} categories, ${LISTINGS.length} listings.`);

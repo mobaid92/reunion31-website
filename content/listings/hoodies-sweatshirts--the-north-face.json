@@ -3,8 +3,6 @@
   "category": "hoodies-sweatshirts",
   "brand_note": "",
   "styles": [
-    "Hoodies & Sweatshirts",
-    "Hoodie",
     "The North Face Fleece Hoodie"
   ],
   "description": "",
@@ -16,6 +14,6 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 97,
+  "sort": 99,
   "videos": []
 }

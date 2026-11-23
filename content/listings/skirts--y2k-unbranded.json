@@ -3,10 +3,6 @@
   "category": "skirts",
   "brand_note": "",
   "styles": [
-    "Mini skirts Layered, Ruffled and Frill style",
-    "Tartar Plaid skirts",
-    "Floral skirts",
-    "Skirts",
     "Y2K Mini skirts Layered, Ruffled and Frill style (",
     "Y2K Tartar Plaid skirts",
     "Y2K Denim Mini skirts",
@@ -16,9 +12,6 @@
   ],
   "description": "",
   "photos": [
-    "/images/uploads/printed-skirts.jpg",
-    "/images/uploads/denim-skirts.jpg",
-    "/images/uploads/plaid-skirts.jpg",
     "/images/uploads/fleek/9527196254446-1.jpg",
     "/images/uploads/fleek/9527196254446-2.jpg",
     "/images/uploads/fleek/9527151624430-1.jpg",
@@ -33,7 +26,7 @@
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 96,
+  "sort": 94,
   "videos": [
     "/images/uploads/fleek/9527196254446.mp4",
     "/images/uploads/fleek/9527151624430.mp4"
