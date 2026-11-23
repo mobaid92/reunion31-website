@@ -344,3 +344,5 @@ section.tight{padding-top:0}
 .foot-base{border-top-color:rgba(255,255,255,.12)}
 .skip{background:var(--navy);color:var(--cream)}
 .stat-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.wa-ico{width:18px;height:18px;flex-shrink:0}
+.dlg-wa{background:#25D366!important;color:#fff!important;border:0!important}

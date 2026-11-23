@@ -57,6 +57,7 @@ const GENERIC = /^(mixed brands|accessories|y2k \/ unbranded|hawaiian shirts)$/i
 const BRANDS = [...new Set(LISTINGS.flatMap(l => String(l.title).split(/\s*\/\s*/)).map(b => b.trim()).filter(b => b && !GENERIC.test(b) && !/unbranded/i.test(b)))];
 const brandCount = BRANDS.length;
 
+const WA_ICON = `<svg class="wa-ico" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8A13 13 0 1 0 16 3Zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-4 1 1.1-3.9-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.2 1.4 3.4 2.4 3.6 5.7 5c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.3Z"/></svg>`;
 // ---------- layout ----------
 const NAV = [["index.html", "Home"], ["catalogue.html", "Catalogue"], ["about.html", "About"], ["how-to-order.html", "How to order"], ["contact.html", "Contact"]];
 function layout(file, title, desc, body, extraHead = "") {
@@ -92,7 +93,7 @@ ${extraHead}
     <nav class="main-nav" aria-label="Main">
       ${NAV.slice(1).map(([h, l]) => `<a href="/${h}"${h === file ? ' aria-current="page"' : ""}>${l}</a>`).join("")}
     </nav>
-    <a class="btn btn-kraft btn-sm head-cta" href="/contact.html">Get a quote</a>
+    <a class="btn btn-kraft btn-sm head-cta" href="${esc(wa || "/contact.html")}"${wa ? ' target="_blank" rel="noopener"' : ""}>${wa ? WA_ICON + " " : ""}Get a quote</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span><span></span></button>
   </div>
   <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile" hidden>
@@ -130,7 +131,7 @@ const tag = (rows) => `<div class="tag"><dl>${rows.filter(r => r[1]).map(([k, v]
 const pageHead = (eyebrow, h1, lede) => `<section class="page-head"><div class="wrap"><p class="eyebrow">${esc(eyebrow)}</p><h1>${esc(h1)}</h1>${lede ? `<p class="lede">${esc(lede)}</p>` : ""}</div></section>`;
 const ctaBand = () => `<section class="cta-band"><div class="wrap"><div class="cta-card">
   <div><h2>Tell us what your store needs.</h2><p class="lede">Send your wishlist and we will reply with stock photos and a quote.</p></div>
-  <div class="cta-row"><a class="btn btn-kraft" href="/contact.html">Request a quote</a>${waLink() ? `<a class="btn btn-line" href="${esc(waLink("Hi ReUnion 31, I'd like a wholesale quote."))}" target="_blank" rel="noopener">WhatsApp us</a>` : `<a class="btn btn-line" href="${esc(mail())}">Email us</a>`}</div>
+  <div class="cta-row">${waLink() ? `<a class="btn btn-kraft" href="${esc(waLink("Hi ReUnion 31, I'd like a wholesale quote."))}" target="_blank" rel="noopener">${WA_ICON} WhatsApp for a quote</a><a class="btn btn-line" href="/contact.html">Send a form</a>` : `<a class="btn btn-kraft" href="/contact.html">Request a quote</a><a class="btn btn-line" href="${esc(mail())}">Email us</a>`}</div>
 </div></div></section>`;
 
 // listing card (catalogue + home)
@@ -186,7 +187,7 @@ const pages = {};
     <p class="eyebrow">Wholesale · ${esc(S.ships_from)} → ${esc(S.ships_to)}</p>
     <h1>${esc(HOME.hero_heading)}</h1>
     <p class="lede">${esc(HOME.hero_text)}</p>
-    <div class="cta-row"><a class="btn btn-kraft" href="/contact.html">Request a quote</a><a class="btn btn-line" href="/catalogue.html">Browse the catalogue</a></div>
+    <div class="cta-row">${waLink() ? `<a class="btn btn-kraft" href="${esc(waLink("Hi ReUnion 31, I'd like a wholesale quote."))}" target="_blank" rel="noopener">${WA_ICON} Get a quote on WhatsApp</a>` : `<a class="btn btn-kraft" href="/contact.html">Request a quote</a>`}<a class="btn btn-line" href="/catalogue.html">Browse the catalogue</a></div>
   </div>
   <div class="hero-photo-wrap"><div class="photo hero-photo">${heroMedia}</div>
     ${tag([["Min. order", S.min_order], ["Dispatch", S.dispatch_time], ["Ships from", S.ships_from], ["Ships to", S.ships_to]])}

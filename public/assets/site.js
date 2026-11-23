@@ -32,7 +32,7 @@
       const msg = `Hi ReUnion 31, I'd like a quote for ${l.title} – ${l.cat}.`;
       $(".dlg-quote", dlg).href = `/contact.html?listing=${encodeURIComponent(l.title + " – " + l.cat)}`;
       const wa = $(".dlg-wa", dlg);
-      if (Q.wa) { wa.hidden = false; wa.href = `https://wa.me/${Q.wa}?text=${encodeURIComponent(msg)}`; }
+      if (Q.wa) { wa.hidden = false; wa.textContent = "WhatsApp for a quote"; wa.href = `https://wa.me/${Q.wa}?text=${encodeURIComponent(msg)}`; }
       dlg.showModal();
       $(".dlg-close", dlg).focus();
     };
