@@ -1,0 +1,20 @@
+{
+  "title": "Mixed Brands",
+  "category": "hoodies-sweatshirts",
+  "brand_note": "",
+  "styles": [
+    "Hoodies & Sweatshirts",
+    "Premium Hoodies & Sweatshirts",
+    "Vintage O'Neills Sports Hoodies"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/mixed-brand-hoodies.jpg",
+    "/images/uploads/mixed-brand-sweatshirts.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": false,
+  "in_stock": true,
+  "sort": 97
+}

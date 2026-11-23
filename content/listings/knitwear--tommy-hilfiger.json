@@ -1,0 +1,20 @@
+{
+  "title": "Tommy Hilfiger",
+  "category": "knitwear",
+  "brand_note": "",
+  "styles": [
+    "Mix Sweaters",
+    "Crewnecks",
+    "1985 Sweater",
+    "Sweaters"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/tommy-hilfiger-knitwear.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": false,
+  "in_stock": true,
+  "sort": 92
+}

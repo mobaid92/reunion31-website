@@ -1,0 +1,35 @@
+{
+  "title": "Ralph Lauren",
+  "category": "quarter-zips",
+  "brand_note": "",
+  "styles": [
+    "Quarter Zip Sweaters",
+    "Quarter Zip Pullover",
+    "Quarter Zip Pullover Sweater",
+    "Quarter Zip Knit Sweater",
+    "1/4 Zip",
+    "Half-Zip Sweater",
+    "Quarter Zip Pima Cotton Sweater",
+    "Mock Neck 1/4 Zip Pullover",
+    "1/4 Zip Blue Pullover",
+    "100% Pima Cotton Mock Neck",
+    "Striped 1/4 Zip Pullover",
+    "Plaid Quarter Zip Pullover",
+    "1/4 Zip Pullover Navy Blue",
+    "Zip Neck Sweater",
+    "100% Lambs Wool Quarter Zip",
+    "Plaid 1/4 Zip Long Sleeve Shirt",
+    "1/4 Zip Long Sleeve Top",
+    "Navy Blue Mock Neck 1/4 Zip",
+    "Half Zip Pullover"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/ralph-lauren-quarter-zips.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": true,
+  "in_stock": true,
+  "sort": 56
+}

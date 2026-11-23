@@ -1,0 +1,210 @@
+# ReUnion 31 admin panel (Sveltia CMS). Open yoursite/admin to edit.
+# Every "Save" commits to GitHub; Cloudflare rebuilds the site in about a minute.
+backend:
+  name: github
+  repo: mobaid92/reunion31-website
+  branch: main
+  commit_messages:
+    create: "Add {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "Upload “{{path}}”"
+    deleteMedia: "Delete “{{path}}”"
+
+site_url: /
+display_url: /
+logo_url: /images/logo.jpg
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+      max_file_size: 25000000 # 25 MB. Longer videos: upload to YouTube or Instagram and paste the link.
+      transformations:
+        raster_image: # phone photos are shrunk and converted to WebP on upload
+          format: webp
+          quality: 82
+          width: 1800
+          height: 1800
+
+collections:
+  # ---------------- Catalogue ----------------
+  - name: listings
+    label: Catalogue listings
+    label_singular: Listing
+    description: One card per brand per category. Add photos and an optional video. Untick "In stock" to hide a listing without deleting it.
+    icon: checkroom
+    folder: content/listings
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{category}}--{{title}}"
+    identifier_field: title
+    summary: "{{title}} · {{category}}"
+    sortable_fields: [title, category, sort]
+    view_groups:
+      - { label: Category, field: category }
+    view_filters:
+      - { label: Featured on home, field: featured, pattern: true }
+      - { label: Hidden (out of stock), field: in_stock, pattern: false }
+    fields:
+      - { label: Brand, name: title, widget: string, hint: "e.g. Ralph Lauren, or Nike / Adidas for a mixed listing" }
+      - label: Category
+        name: category
+        widget: relation
+        collection: categories
+        value_field: "{{slug}}"
+        search_fields: [name]
+        display_fields: [name]
+      - label: Photos
+        name: photos
+        widget: list
+        required: false
+        hint: The first photo is the cover. Drag to reorder.
+        field: { label: Photo, name: image, widget: image }
+      - label: Video file (optional)
+        name: video
+        widget: file
+        required: false
+        hint: Short clip under 25 MB (about 30 seconds). For longer videos, use the link field below.
+      - label: Video link (optional)
+        name: video_url
+        widget: string
+        required: false
+        hint: Paste a YouTube, Instagram reel or TikTok link.
+      - label: Styles in this listing
+        name: styles
+        widget: list
+        required: false
+        hint: One style per line, e.g. Quarter Zip Sweaters
+        field: { label: Style, name: style, widget: string }
+      - { label: Brand note (optional), name: brand_note, widget: string, required: false, hint: "Small text under the brand, e.g. the labels inside a mixed bundle" }
+      - { label: Description (optional), name: description, widget: text, required: false }
+      - { label: Feature on home page, name: featured, widget: boolean, default: false, required: false }
+      - { label: In stock (show on site), name: in_stock, widget: boolean, default: true, required: false }
+      - { label: Sort order, name: sort, widget: number, value_type: int, default: 50, required: false, hint: Lower numbers show first within a category. }
+
+  - name: categories
+    label: Categories
+    label_singular: Category
+    icon: category
+    folder: content/categories
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{order}}. {{name}}"
+    sortable_fields: [order, name]
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
+      - { label: Cover photo, name: cover, widget: image, required: false, hint: Used on the home page tiles. If empty, the first listing photo is used. }
+      - { label: Order, name: order, widget: number, value_type: int, default: 20 }
+
+  # ---------------- Photos & videos page ----------------
+  - name: gallery
+    label: Photos & videos
+    label_singular: Post
+    description: Posts for the Photos & videos page. The newest four also show on the home page.
+    icon: photo_library
+    folder: content/gallery
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    identifier_field: title
+    summary: "{{date}} · {{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD" }
+      - { label: Caption, name: caption, widget: string, required: false }
+      - { label: Photo, name: image, widget: image, required: false, hint: For a video post, this is used as the cover. }
+      - { label: Video file, name: video, widget: file, required: false, hint: Short clip under 25 MB. }
+      - { label: Video link, name: video_url, widget: string, required: false, hint: YouTube, Instagram reel or TikTok link. }
+
+  # ---------------- Pages & settings ----------------
+  - name: pages
+    label: Pages & settings
+    icon: settings
+    files:
+      - name: settings
+        label: Business details
+        file: content/settings.json
+        fields:
+          - { label: Business name, name: business_name, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Website address, name: site_url, widget: string, required: false, hint: "e.g. https://reunion31.com (used for search engines and the form's thank-you page)" }
+          - { label: Email, name: email, widget: string }
+          - { label: WhatsApp number, name: whatsapp, widget: string, required: false, hint: "With country code, e.g. +92 300 1234567. Leave empty to hide WhatsApp buttons." }
+          - { label: Instagram handle, name: instagram, widget: string, required: false }
+          - { label: Fleek store link, name: fleek_url, widget: string, required: false }
+          - { label: Minimum order, name: min_order, widget: string }
+          - { label: Ships from, name: ships_from, widget: string }
+          - { label: Ships to, name: ships_to, widget: string }
+          - { label: Dispatch time, name: dispatch_time, widget: string, required: false }
+          - { label: Footer note, name: footer_note, widget: string, required: false }
+      - name: home
+        label: Home page
+        file: content/home.json
+        fields:
+          - { label: Main heading, name: hero_heading, widget: string }
+          - { label: Intro text, name: hero_text, widget: text }
+          - { label: Main photo, name: hero_image, widget: image, required: false }
+          - { label: Main video (optional, plays silently on loop), name: hero_video, widget: file, required: false, hint: "Under 10 MB is best. Replaces the photo when set." }
+          - label: Stats
+            name: stats
+            widget: list
+            required: false
+            fields:
+              - { label: Number, name: value, widget: string }
+              - { label: Label, name: label, widget: string }
+          - { label: Stats note, name: stats_note, widget: string, required: false }
+          - label: Why buy from us
+            name: features
+            widget: list
+            required: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+      - name: about
+        label: About page
+        file: content/about.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Body (leave a blank line between paragraphs), name: body, widget: text }
+          - { label: Photo, name: image, widget: image, required: false }
+          - label: What you can expect
+            name: values
+            widget: list
+            required: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+      - name: order
+        label: How to order page
+        file: content/order.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - label: Steps
+            name: steps
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+          - label: FAQs
+            name: faqs
+            widget: list
+            required: false
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }

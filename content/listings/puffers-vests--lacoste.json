@@ -1,0 +1,20 @@
+{
+  "title": "Lacoste",
+  "category": "puffers-vests",
+  "brand_note": "",
+  "styles": [
+    "Puffer Jacket",
+    "Puffer Vest",
+    "Quilted Jacket",
+    "Live Puffer Vest"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/lacoste-red-puffer.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": true,
+  "in_stock": true,
+  "sort": 88
+}

@@ -1,0 +1,18 @@
+{
+  "heading": "How to order",
+  "intro": "Ordering is done by quote, so every price matches your brand mix, grade and quantity.",
+  "steps": [
+    { "title": "Send us your list", "text": "Categories, brands, sizes and how many pieces. Minimum 10." },
+    { "title": "Get a quote with photos", "text": "We reply with a price and real photos or video of your bundle." },
+    { "title": "Pay and confirm", "text": "Pay by the method agreed on your quote, and we lock in your bundle." },
+    { "title": "We pack and ship", "text": "Packed in Karachi and shipped with tracking to your door." }
+  ],
+  "faqs": [
+    { "question": "What is the minimum order?", "answer": "10 pieces. You can mix brands within a category." },
+    { "question": "Can I mix brands?", "answer": "Yes. We sell single-brand bundles and mixed-brand bundles, depending on what is in stock." },
+    { "question": "Can I see the pieces before I pay?", "answer": "Yes. We send real photos or a video of the exact bundle with your quote." },
+    { "question": "Where do you ship?", "answer": "From Karachi to the US, UK and Europe, with tracking." },
+    { "question": "How is condition graded?", "answer": "Each piece is checked by hand before packing, and the condition is noted on your quote." },
+    { "question": "Why are there no prices on the site?", "answer": "Prices depend on brand mix, grade and quantity, and stock changes daily. Send us your list and we will quote you." }
+  ]
+}

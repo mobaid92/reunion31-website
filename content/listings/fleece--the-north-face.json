@@ -1,0 +1,22 @@
+{
+  "title": "The North Face",
+  "category": "fleece",
+  "brand_note": "",
+  "styles": [
+    "Fleece Pullover",
+    "Fleece Jacket",
+    "Fleece Hoodie",
+    "Plaid Fleece Hoodie",
+    "Fleece Pullover Jacket"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/tnf-fleece-1.jpg",
+    "/images/uploads/tnf-fleece-2.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": true,
+  "in_stock": true,
+  "sort": 83
+}

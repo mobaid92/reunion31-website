@@ -1,0 +1,43 @@
+{
+  "title": "Ralph Lauren",
+  "category": "knitwear",
+  "brand_note": "",
+  "styles": [
+    "Cable Knit Sweaters",
+    "Cable Knit V-Neck Sweater",
+    "Knit Sweater",
+    "Crewneck Sweater",
+    "V-Neck Sweater",
+    "Cardigan",
+    "Mixed Sweaters",
+    "Pullover Sweater",
+    "Cable Knit Zip-Up Sweater",
+    "Pink Knit Zip-Up Cardigan",
+    "Purple Zip Up Sweater",
+    "Pink Cable Knit V-Neck Sweater",
+    "100% Lambs Wool Cable Knit",
+    "Crewneck Merino Wool Sweater",
+    "100% Lambs Wool Sweater",
+    "Sleeveless V-Neck Sweater",
+    "Sweater",
+    "Navy Blue Crew Neck Sweater",
+    "Men's V-Neck Sweater",
+    "Cream Cable Knit Sweater",
+    "Green Crew Neck Sweater",
+    "Green Cotton Sweater",
+    "Yellow V-Neck Sweater",
+    "Cable Knit Cardigan",
+    "Cable Knit",
+    "Heavy Sweaters",
+    "Light Sweaters"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/ralph-lauren-knitwear.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": true,
+  "in_stock": true,
+  "sort": 47
+}

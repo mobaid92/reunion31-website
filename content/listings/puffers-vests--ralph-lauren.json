@@ -1,0 +1,27 @@
+{
+  "title": "Ralph Lauren",
+  "category": "puffers-vests",
+  "brand_note": "",
+  "styles": [
+    "Button Down Shirts",
+    "Puffer Jackets",
+    "Puffer Vest",
+    "V-Neck Plaid Vest",
+    "V-Neck Vest",
+    "Puffer Bomber Jacket",
+    "Quilted Vest",
+    "Navy Blue Down Jacket",
+    "Camo Puffer Jacket",
+    "Button Down"
+  ],
+  "description": "",
+  "photos": [
+    "/images/uploads/ralph-lauren-puffer-vests.jpg",
+    "/images/uploads/ralph-lauren-puffer-vests-hero.jpg"
+  ],
+  "video": "",
+  "video_url": "",
+  "featured": true,
+  "in_stock": true,
+  "sort": 80
+}
