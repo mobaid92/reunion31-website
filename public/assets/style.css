@@ -343,3 +343,4 @@ section.tight{padding-top:0}
 .mobile-nav a{border-bottom-color:var(--line)}
 .foot-base{border-top-color:rgba(255,255,255,.12)}
 .skip{background:var(--navy);color:var(--cream)}
+.stat-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
