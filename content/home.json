@@ -5,10 +5,6 @@
   "hero_video": "",
   "stats": [
     {
-      "value": "4.8/5",
-      "label": "Buyer rating on Fleek"
-    },
-    {
       "value": "70",
       "label": "Buyer reviews"
     },
