@@ -12,16 +12,33 @@
     "Quilted Vest",
     "Navy Blue Down Jacket",
     "Camo Puffer Jacket",
-    "Button Down"
+    "Button Down",
+    "Polo Jeans Co. Ralph Lauren Outerwear Puffer Jacke",
+    "Polo Sport Ralph Lauren Puffer Vest",
+    "Polo Sport Ralph Lauren Red Puffer Vest",
+    "Polo by Ralph Lauren Puffer Jacket",
+    "DENIM & SUPPLY RALPH LAUREN Puffer Vest",
+    "Polo by Ralph Lauren Quilted Vest"
   ],
   "description": "",
   "photos": [
     "/images/uploads/ralph-lauren-puffer-vests.jpg",
-    "/images/uploads/ralph-lauren-puffer-vests-hero.jpg"
+    "/images/uploads/ralph-lauren-puffer-vests-hero.jpg",
+    "/images/uploads/fleek/9592527913198-1.jpg",
+    "/images/uploads/fleek/9592527913198-2.jpg",
+    "/images/uploads/fleek/9592497438958-1.jpg",
+    "/images/uploads/fleek/9592497438958-2.jpg",
+    "/images/uploads/fleek/9592497406190-1.jpg",
+    "/images/uploads/fleek/9592497406190-2.jpg",
+    "/images/uploads/fleek/9592489181422-1.jpg",
+    "/images/uploads/fleek/9592489181422-2.jpg",
+    "/images/uploads/fleek/9592488329454-1.jpg",
+    "/images/uploads/fleek/9592488329454-2.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": true,
   "in_stock": true,
-  "sort": 80
+  "sort": 80,
+  "videos": []
 }

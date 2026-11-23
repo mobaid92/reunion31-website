@@ -9,15 +9,35 @@
     "Night wear",
     "Half and full sleeves Tops",
     "Tops & Dresses",
-    "Tops, Dresses, Camisoles & Shirts"
+    "Tops, Dresses, Camisoles & Shirts",
+    "Y2K Long Sleeve T-Shirts",
+    "Y2K night wear",
+    "Y2K Tops",
+    "Y2K tank Tops and Button Down",
+    "Y2K half and full sleeves Tops"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/womens-tops.jpg"
+    "/images/uploads/womens-tops.jpg",
+    "/images/uploads/fleek/9553419337966-1.jpg",
+    "/images/uploads/fleek/9553468162286-1.jpg",
+    "/images/uploads/fleek/9527198482670-1.jpg",
+    "/images/uploads/fleek/9527198482670-2.jpg",
+    "/images/uploads/fleek/9535994331374-1.jpg",
+    "/images/uploads/fleek/9535994331374-2.jpg",
+    "/images/uploads/fleek/9536016351470-1.jpg",
+    "/images/uploads/fleek/9536016351470-2.jpg",
+    "/images/uploads/fleek/9536028377326-1.jpg",
+    "/images/uploads/fleek/9536028377326-2.jpg",
+    "/images/uploads/fleek/9527207657710-1.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 91
+  "sort": 91,
+  "videos": [
+    "/images/uploads/fleek/9553419337966.mp4",
+    "/images/uploads/fleek/9553468162286.mp4"
+  ]
 }

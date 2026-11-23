@@ -6,15 +6,19 @@
     "Mix Sweaters",
     "Crewnecks",
     "1985 Sweater",
-    "Sweaters"
+    "Sweaters",
+    "Tommy Hilfiger 1985 Sweater"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/tommy-hilfiger-knitwear.jpg"
+    "/images/uploads/tommy-hilfiger-knitwear.jpg",
+    "/images/uploads/fleek/9455671607534-1.jpg",
+    "/images/uploads/fleek/9455671607534-2.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 92
+  "sort": 92,
+  "videos": []
 }

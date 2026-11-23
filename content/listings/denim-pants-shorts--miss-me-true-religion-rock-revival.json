@@ -7,13 +7,39 @@
     "Men's Jeans",
     "Flared Cargo Jeans",
     "Shorts",
-    "Denim Shorts"
+    "Denim Shorts",
+    "Rock Revival & True Religion Jeans",
+    "True Religion/ Miss Me shorts",
+    "Rock Revival Straight Jeans",
+    "Rock Revival Jeans",
+    "Rock Revival \"Faeney\" Slim Straight Jeans",
+    "Rock Revival Easy Boot Jeans",
+    "Rock Revival Elaina Bootcut Jeans",
+    "True Religion Cargo Flare Jeans",
+    "True Religion Denim Shorts"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9580969099502-1.jpg",
+    "/images/uploads/fleek/9580969099502-2.jpg",
+    "/images/uploads/fleek/9493883879662-1.jpg",
+    "/images/uploads/fleek/9493883879662-2.jpg",
+    "/images/uploads/fleek/9589640560878-1.jpg",
+    "/images/uploads/fleek/9589640560878-2.jpg",
+    "/images/uploads/fleek/9589640200430-1.jpg",
+    "/images/uploads/fleek/9589640200430-2.jpg",
+    "/images/uploads/fleek/9589640102126-1.jpg",
+    "/images/uploads/fleek/9589640102126-2.jpg",
+    "/images/uploads/fleek/9589639479534-1.jpg",
+    "/images/uploads/fleek/9589639479534-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 94
+  "sort": 94,
+  "videos": [
+    "/images/uploads/fleek/9580969099502.mp4",
+    "/images/uploads/fleek/9493883879662.mp4"
+  ]
 }

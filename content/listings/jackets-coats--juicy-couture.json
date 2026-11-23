@@ -4,13 +4,20 @@
   "brand_note": "",
   "styles": [
     "Velour Track Jacket",
-    "Hoodies & Jackets"
+    "Hoodies & Jackets",
+    "Juicy Couture Velour Track Jacket"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9565404496110-1.jpg",
+    "/images/uploads/fleek/9565404496110-2.jpg",
+    "/images/uploads/fleek/9565396009198-1.jpg",
+    "/images/uploads/fleek/9565396009198-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 97
+  "sort": 97,
+  "videos": []
 }

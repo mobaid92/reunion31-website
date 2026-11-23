@@ -7,13 +7,33 @@
     "Men's 1/4 Zip Pullover",
     "Capilene Blue Long Sleeve Half Zip Shirt",
     "Capilene 3 Midweight 1/4 Zip Long",
-    "Capilene 1/4 Zip Long Sleeve Shirt"
+    "Capilene 1/4 Zip Long Sleeve Shirt",
+    "Patagonia Midweight Capilene Baselayer",
+    "Patagonia Quarter Zip Pullover",
+    "Patagonia Men's 1/4 Zip Pullover",
+    "Patagonia Capilene Blue Long Sleeve Half Zip Shirt",
+    "Patagonia Capilene 3 Midweight 1/4 Zip Long Sleeve",
+    "Patagonia Capilene 1/4 Zip Long Sleeve Shirt"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9497250300142-1.jpg",
+    "/images/uploads/fleek/9497250300142-2.jpg",
+    "/images/uploads/fleek/9497249874158-1.jpg",
+    "/images/uploads/fleek/9497249874158-2.jpg",
+    "/images/uploads/fleek/9497249415406-1.jpg",
+    "/images/uploads/fleek/9497249415406-2.jpg",
+    "/images/uploads/fleek/9497249087726-1.jpg",
+    "/images/uploads/fleek/9497249087726-2.jpg",
+    "/images/uploads/fleek/9497248563438-1.jpg",
+    "/images/uploads/fleek/9497248563438-2.jpg",
+    "/images/uploads/fleek/9497248366830-1.jpg",
+    "/images/uploads/fleek/9497248366830-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 95
+  "sort": 95,
+  "videos": []
 }

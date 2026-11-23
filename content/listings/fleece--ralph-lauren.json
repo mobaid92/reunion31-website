@@ -3,13 +3,18 @@
   "category": "fleece",
   "brand_note": "",
   "styles": [
-    "Fleece Pullover"
+    "Fleece Pullover",
+    "Polo Ralph Lauren Fleece Pullover"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9546472521966-1.jpg",
+    "/images/uploads/fleek/9546472521966-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 99
+  "sort": 99,
+  "videos": []
 }

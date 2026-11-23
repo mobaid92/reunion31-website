@@ -6,15 +6,30 @@
     "Puffer Jacket",
     "Puffer Vest",
     "Quilted Jacket",
-    "Live Puffer Vest"
+    "Live Puffer Vest",
+    "Lacoste Colorblock Puffer Jacket",
+    "Lacoste Puffer Jacket",
+    "Lacoste Live Puffer Jacket"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/lacoste-red-puffer.jpg"
+    "/images/uploads/lacoste-red-puffer.jpg",
+    "/images/uploads/fleek/9592532009198-1.jpg",
+    "/images/uploads/fleek/9592532009198-2.jpg",
+    "/images/uploads/fleek/9592531288302-1.jpg",
+    "/images/uploads/fleek/9592531288302-2.jpg",
+    "/images/uploads/fleek/9592531026158-1.jpg",
+    "/images/uploads/fleek/9592531026158-2.jpg",
+    "/images/uploads/fleek/9592519524590-1.jpg",
+    "/images/uploads/fleek/9592519524590-2.jpg",
+    "/images/uploads/fleek/9592516444398-1.jpg",
+    "/images/uploads/fleek/9592516444398-2.jpg",
+    "/images/uploads/fleek/9592516378862-1.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": true,
   "in_stock": true,
-  "sort": 88
+  "sort": 88,
+  "videos": []
 }

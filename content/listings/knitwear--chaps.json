@@ -3,13 +3,23 @@
   "category": "knitwear",
   "brand_note": "",
   "styles": [
-    "Sweaters mix"
+    "Sweaters mix",
+    "Chaps Sweaters mix"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9536182059246-1.jpg",
+    "/images/uploads/fleek/9536182059246-2.jpg",
+    "/images/uploads/fleek/9543236157678-1.jpg",
+    "/images/uploads/fleek/9543236157678-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 98
+  "sort": 98,
+  "videos": [
+    "/images/uploads/fleek/9536182059246.mp4",
+    "/images/uploads/fleek/9543236157678.mp4"
+  ]
 }

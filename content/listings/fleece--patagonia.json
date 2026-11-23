@@ -10,13 +10,27 @@
     "1/4 Zip Pullover Fleece",
     "Women's Fleece Hoodie",
     "Women's Fleece Pullover",
-    "Fleeces"
+    "Fleeces",
+    "Patagonia Fleece Pullover",
+    "Patagonia Women's Fleece Jacket",
+    "Patagonia Fleece Pullover XXS",
+    "Patagonia Gray Hooded Button-Up Fleece Jacket"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9580097077486-1.jpg",
+    "/images/uploads/fleek/9580097077486-2.jpg",
+    "/images/uploads/fleek/9580096880878-1.jpg",
+    "/images/uploads/fleek/9580096880878-2.jpg",
+    "/images/uploads/fleek/9580095308014-1.jpg",
+    "/images/uploads/fleek/9580095308014-2.jpg",
+    "/images/uploads/fleek/9580092260590-1.jpg",
+    "/images/uploads/fleek/9580092260590-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 90
+  "sort": 90,
+  "videos": []
 }

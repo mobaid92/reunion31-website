@@ -10,15 +10,31 @@
     "Hooded Parka Jacket",
     "Men's Quilted Jacket",
     "Men's Down Jacket",
-    "Quilted Jacket"
+    "Quilted Jacket",
+    "Patagonia Women's Down Jacket",
+    "Patagonia Womens/Femmes Quilted Jacket",
+    "Patagonia \"STONKA PINE\" \"PREMULLER\" Puffer Jacket",
+    "Patagonia Womens Down Coat"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/patagonia-vest-and-jacket.jpg"
+    "/images/uploads/patagonia-vest-and-jacket.jpg",
+    "/images/uploads/fleek/9632069386478-1.jpg",
+    "/images/uploads/fleek/9632069386478-2.jpg",
+    "/images/uploads/fleek/9632069026030-1.jpg",
+    "/images/uploads/fleek/9632069026030-2.jpg",
+    "/images/uploads/fleek/9592530305262-1.jpg",
+    "/images/uploads/fleek/9592530305262-2.jpg",
+    "/images/uploads/fleek/9592529912046-1.jpg",
+    "/images/uploads/fleek/9592529912046-2.jpg",
+    "/images/uploads/fleek/9592519164142-1.jpg",
+    "/images/uploads/fleek/9592519164142-2.jpg",
+    "/images/uploads/fleek/9592517296366-1.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 90
+  "sort": 90,
+  "videos": []
 }

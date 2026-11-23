@@ -21,15 +21,26 @@
     "Plaid 1/4 Zip Long Sleeve Shirt",
     "1/4 Zip Long Sleeve Top",
     "Navy Blue Mock Neck 1/4 Zip",
-    "Half Zip Pullover"
+    "Half Zip Pullover",
+    "Ralph Lauren 1/4 Zip Knitwear",
+    "Ralph Lauren 1/4 zip",
+    "Polo Ralph Lauren Cable Knit Quarter Zip Sweater"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/ralph-lauren-quarter-zips.jpg"
+    "/images/uploads/ralph-lauren-quarter-zips.jpg",
+    "/images/uploads/fleek/9648847651054-1.jpg",
+    "/images/uploads/fleek/9540156719342-1.jpg",
+    "/images/uploads/fleek/9598339088622-1.jpg",
+    "/images/uploads/fleek/9598339088622-2.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": true,
   "in_stock": true,
-  "sort": 56
+  "sort": 56,
+  "videos": [
+    "/images/uploads/fleek/9648847651054.mp4",
+    "/images/uploads/fleek/9540156719342.mp4"
+  ]
 }

@@ -4,15 +4,26 @@
   "brand_note": "",
   "styles": [
     "Pullover and Full Zip Hoodies",
-    "Hoodies & Sweatshirts"
+    "Hoodies & Sweatshirts",
+    "Nike Hoodies",
+    "Adidas Hoodies and Track Jackets Lot",
+    "Nike Hoodies Bundle"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/nike-hoodies.jpg"
+    "/images/uploads/nike-hoodies.jpg",
+    "/images/uploads/fleek/9648857317614-1.jpg",
+    "/images/uploads/fleek/9642542727406-1.jpg",
+    "/images/uploads/fleek/9642554425582-1.jpg",
+    "/images/uploads/fleek/9629037494510-1.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 98
+  "sort": 98,
+  "videos": [
+    "/images/uploads/fleek/9648857317614.mp4",
+    "/images/uploads/fleek/9642542727406.mp4"
+  ]
 }

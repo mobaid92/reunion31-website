@@ -4,13 +4,20 @@
   "brand_note": "",
   "styles": [
     "Bottoms",
-    "Shorts"
+    "Shorts",
+    "Polo Ralph Lauren Bottoms"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9454576140526-1.jpg",
+    "/images/uploads/fleek/9454576140526-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 98
+  "sort": 98,
+  "videos": [
+    "/images/uploads/fleek/9454576140526.mp4"
+  ]
 }

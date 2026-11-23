@@ -6,13 +6,24 @@
     "1/4 Zip",
     "1/4 Zip Sweater",
     "Quarter Zip Knit Sweater",
-    "Quarter Zip Pima Cotton Cashmere"
+    "Quarter Zip Pima Cotton Cashmere",
+    "Tommy Hilfiger 1/4 Zip Sweater",
+    "Tommy Hilfiger Quarter Zip Knit Sweater",
+    "Tommy Hilfiger Quarter Zip Pima Cotton Cashmere Sw"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9455671574766-1.jpg",
+    "/images/uploads/fleek/9455671574766-2.jpg",
+    "/images/uploads/fleek/9455670722798-1.jpg",
+    "/images/uploads/fleek/9455670722798-2.jpg",
+    "/images/uploads/fleek/9455670001902-1.jpg",
+    "/images/uploads/fleek/9455670001902-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 95
+  "sort": 95,
+  "videos": []
 }

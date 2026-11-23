@@ -3,13 +3,20 @@
   "category": "jackets-coats",
   "brand_note": "",
   "styles": [
-    "Jackets"
+    "Jackets",
+    "Y2K jackets"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9508231217390-1.jpg",
+    "/images/uploads/fleek/9508231217390-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 98
+  "sort": 98,
+  "videos": [
+    "/images/uploads/fleek/9508231217390.mp4"
+  ]
 }

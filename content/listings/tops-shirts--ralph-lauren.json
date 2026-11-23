@@ -6,13 +6,32 @@
     "Polo T-shirt",
     "T-Shirts",
     "Polos",
-    "Shirts"
+    "Shirts",
+    "Ralph Lauren T-Shirts",
+    "Polo Ralph Lauren T-Shirts",
+    "Ralph Lauren Button-Up Shirts",
+    "Ralph Lauren polo T-shirts"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9648841457902-1.jpg",
+    "/images/uploads/fleek/9596131049710-1.jpg",
+    "/images/uploads/fleek/9596131049710-2.jpg",
+    "/images/uploads/fleek/9598037491950-1.jpg",
+    "/images/uploads/fleek/9598037491950-2.jpg",
+    "/images/uploads/fleek/9631749243118-1.jpg",
+    "/images/uploads/fleek/9598043947246-1.jpg",
+    "/images/uploads/fleek/9598043947246-2.jpg",
+    "/images/uploads/fleek/9516151505134-1.jpg",
+    "/images/uploads/fleek/9516151505134-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 96
+  "sort": 96,
+  "videos": [
+    "/images/uploads/fleek/9648841457902.mp4",
+    "/images/uploads/fleek/9596131049710.mp4"
+  ]
 }

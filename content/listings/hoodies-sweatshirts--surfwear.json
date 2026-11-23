@@ -3,13 +3,20 @@
   "category": "hoodies-sweatshirts",
   "brand_note": "Quiksilver, Billabong, Rip Curl, O'Neill, Hurley, Oakley",
   "styles": [
-    "Surf Hoodies & Sweatshirts"
+    "Surf Hoodies & Sweatshirts",
+    "Vintage O'Neills Sports Hoodies"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9482623516910-1.jpg",
+    "/images/uploads/fleek/9482623516910-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 99
+  "sort": 99,
+  "videos": [
+    "/images/uploads/fleek/9482623516910.mp4"
+  ]
 }

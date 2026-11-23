@@ -5,16 +5,25 @@
   "styles": [
     "Hoodies & Sweatshirts",
     "Premium Hoodies & Sweatshirts",
-    "Vintage O'Neills Sports Hoodies"
+    "Vintage O'Neills Sports Hoodies",
+    "Mixed Branded Hoodies and Sweatshirts",
+    "Mixed Branded Hoodies"
   ],
   "description": "",
   "photos": [
     "/images/uploads/mixed-brand-hoodies.jpg",
-    "/images/uploads/mixed-brand-sweatshirts.jpg"
+    "/images/uploads/mixed-brand-sweatshirts.jpg",
+    "/images/uploads/fleek/9607255752942-1.jpg",
+    "/images/uploads/fleek/9607255752942-2.jpg",
+    "/images/uploads/fleek/9642536370414-1.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 97
+  "sort": 97,
+  "videos": [
+    "/images/uploads/fleek/9607255752942.mp4",
+    "/images/uploads/fleek/9642536370414.mp4"
+  ]
 }

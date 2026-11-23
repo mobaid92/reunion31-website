@@ -3,13 +3,39 @@
   "category": "hoodies-sweatshirts",
   "brand_note": "",
   "styles": [
-    "Hoodies"
+    "Hoodies",
+    "Carhartt Loose Fit Hoodie",
+    "Carhartt J149 BLK Full Zip Hooded Sweatshirt",
+    "Carhartt Blue Hoodie Original Fit",
+    "Carhartt Original Fit Hoodie",
+    "Carhartt Brown Hoodie",
+    "Carhartt Full Zip Hoodie",
+    "Carhartt Rain Defender Loose Fit Full Zip Hoodie",
+    "Carhartt Hoodies and Sweatshirt",
+    "Carhartt Sweatshirts and Hoodies Bundle"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9649052680430-1.jpg",
+    "/images/uploads/fleek/9649052680430-2.jpg",
+    "/images/uploads/fleek/9649052418286-1.jpg",
+    "/images/uploads/fleek/9649052418286-2.jpg",
+    "/images/uploads/fleek/9649051566318-1.jpg",
+    "/images/uploads/fleek/9649051566318-2.jpg",
+    "/images/uploads/fleek/9649051369710-1.jpg",
+    "/images/uploads/fleek/9649051369710-2.jpg",
+    "/images/uploads/fleek/9649050648814-1.jpg",
+    "/images/uploads/fleek/9649050648814-2.jpg",
+    "/images/uploads/fleek/9649042391278-1.jpg",
+    "/images/uploads/fleek/9649042391278-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 99
+  "sort": 99,
+  "videos": [
+    "/images/uploads/fleek/9647168651502.mp4",
+    "/images/uploads/fleek/9645675479278.mp4"
+  ]
 }

@@ -3,15 +3,32 @@
   "category": "fleece",
   "brand_note": "",
   "styles": [
-    "Fleece Jackets"
+    "Fleece Jackets",
+    "Columbia Fleece Jackets",
+    "Columbia Fleece Jackets and Pullovers"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/columbia-fleece.jpg"
+    "/images/uploads/columbia-fleece.jpg",
+    "/images/uploads/fleek/9624381915374-1.jpg",
+    "/images/uploads/fleek/9624381915374-2.jpg",
+    "/images/uploads/fleek/9525774909678-1.jpg",
+    "/images/uploads/fleek/9525774909678-2.jpg",
+    "/images/uploads/fleek/9637633556718-1.jpg",
+    "/images/uploads/fleek/9637633556718-2.jpg",
+    "/images/uploads/fleek/9637629952238-1.jpg",
+    "/images/uploads/fleek/9511567491310-1.jpg",
+    "/images/uploads/fleek/9503065178350-1.jpg",
+    "/images/uploads/fleek/9503065178350-2.jpg",
+    "/images/uploads/fleek/9545060679918-1.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 91
+  "sort": 91,
+  "videos": [
+    "/images/uploads/fleek/9624381915374.mp4",
+    "/images/uploads/fleek/9525774909678.mp4"
+  ]
 }

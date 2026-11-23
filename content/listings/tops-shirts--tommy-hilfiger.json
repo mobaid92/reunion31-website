@@ -5,15 +5,27 @@
   "styles": [
     "Polo T-shirt",
     "Polos",
-    "T-Shirts"
+    "T-Shirts",
+    "Tommy Polo T-Shirts",
+    "Tommy Hilfiger Printed T-Shirts"
   ],
   "description": "",
   "photos": [
-    "/images/uploads/tommy-hilfiger-polos.jpg"
+    "/images/uploads/tommy-hilfiger-polos.jpg",
+    "/images/uploads/fleek/9594016989422-1.jpg",
+    "/images/uploads/fleek/9594016989422-2.jpg",
+    "/images/uploads/fleek/9607244972270-1.jpg",
+    "/images/uploads/fleek/9607244972270-2.jpg",
+    "/images/uploads/fleek/9594013155566-1.jpg",
+    "/images/uploads/fleek/9594013155566-2.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 95
+  "sort": 95,
+  "videos": [
+    "/images/uploads/fleek/9594016989422.mp4",
+    "/images/uploads/fleek/9607244972270.mp4"
+  ]
 }

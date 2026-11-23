@@ -4,13 +4,18 @@
   "brand_note": "",
   "styles": [
     "Hoodies & Sweatshirts",
-    "Hoodie"
+    "Hoodie",
+    "The North Face Fleece Hoodie"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9596120891630-1.jpg",
+    "/images/uploads/fleek/9596120891630-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 97
+  "sort": 97,
+  "videos": []
 }

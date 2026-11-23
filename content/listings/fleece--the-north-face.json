@@ -7,16 +7,27 @@
     "Fleece Jacket",
     "Fleece Hoodie",
     "Plaid Fleece Hoodie",
-    "Fleece Pullover Jacket"
+    "Fleece Pullover Jacket",
+    "The North Face Fleece Jackets",
+    "The North Face Fleece Jacket"
   ],
   "description": "",
   "photos": [
     "/images/uploads/tnf-fleece-1.jpg",
-    "/images/uploads/tnf-fleece-2.jpg"
+    "/images/uploads/tnf-fleece-2.jpg",
+    "/images/uploads/fleek/9543003406574-1.jpg",
+    "/images/uploads/fleek/9543003406574-2.jpg",
+    "/images/uploads/fleek/9650887393518-1.jpg",
+    "/images/uploads/fleek/9650887393518-2.jpg",
+    "/images/uploads/fleek/9596122431726-1.jpg",
+    "/images/uploads/fleek/9596122431726-2.jpg"
   ],
   "video": "",
   "video_url": "",
   "featured": true,
   "in_stock": true,
-  "sort": 83
+  "sort": 83,
+  "videos": [
+    "/images/uploads/fleek/9543003406574.mp4"
+  ]
 }

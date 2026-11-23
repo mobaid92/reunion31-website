@@ -14,13 +14,42 @@
     "Women's Hoodie",
     "Bear Graphic Hoodie",
     "Organic Cotton Zip Hoodie",
-    "Live Simply Hoodie"
+    "Live Simply Hoodie",
+    "Patagonia \"Uprisal\" Hoodie",
+    "Patagonia Women's Cream Hoodie",
+    "Patagonia Hoodies",
+    "Patagonia Blue Hoodie with Bear Graphic",
+    "Patagonia Pink Graphic Hoodie",
+    "Patagonia Organic Cotton Hoodie",
+    "Patagonia Blue Hoodie",
+    "Patagonia Women's Zip-Up Hoodie",
+    "Patagonia Hooded Pullover",
+    "Patagonia Uprisal Hoody",
+    "Patagonia Purple Hoodie with Guitar Graphic and \"L",
+    "Patagonia Men's Hooded Sweatshirt",
+    "Patagonia Organic Cotton Women's Hoodie"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9648992977134-1.jpg",
+    "/images/uploads/fleek/9648992977134-2.jpg",
+    "/images/uploads/fleek/9648978624750-1.jpg",
+    "/images/uploads/fleek/9648978624750-2.jpg",
+    "/images/uploads/fleek/9495159636206-1.jpg",
+    "/images/uploads/fleek/9495159636206-2.jpg",
+    "/images/uploads/fleek/9611348508910-1.jpg",
+    "/images/uploads/fleek/9611348508910-2.jpg",
+    "/images/uploads/fleek/9611346378990-1.jpg",
+    "/images/uploads/fleek/9611346378990-2.jpg",
+    "/images/uploads/fleek/9611344511214-1.jpg",
+    "/images/uploads/fleek/9611344511214-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 83
+  "sort": 83,
+  "videos": [
+    "/images/uploads/fleek/9495159636206.mp4"
+  ]
 }

@@ -3,13 +3,28 @@
   "category": "knitwear",
   "brand_note": "",
   "styles": [
-    "Knit tops"
+    "Knit tops",
+    "Purple Cable Knit Turtleneck Sweater",
+    "Pink Cable Knit Button-Up Cardigan",
+    "Y2K knit tops"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9630154195182-1.jpg",
+    "/images/uploads/fleek/9630154195182-2.jpg",
+    "/images/uploads/fleek/9630086136046-1.jpg",
+    "/images/uploads/fleek/9630086136046-2.jpg",
+    "/images/uploads/fleek/9627648196846-1.jpg",
+    "/images/uploads/fleek/9627648196846-2.jpg",
+    "/images/uploads/fleek/9527217979630-1.jpg",
+    "/images/uploads/fleek/9527217979630-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 99
+  "sort": 99,
+  "videos": [
+    "/images/uploads/fleek/9527217979630.mp4"
+  ]
 }

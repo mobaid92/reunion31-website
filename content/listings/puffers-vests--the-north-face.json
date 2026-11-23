@@ -5,13 +5,21 @@
   "styles": [
     "700 Puffer Vest",
     "Puffer Jacket",
-    "Puffers"
+    "Puffers",
+    "The North Face Fleece Puffer Jacket",
+    "The North Face 700 Puffer Vest"
   ],
   "description": "",
-  "photos": [],
+  "photos": [
+    "/images/uploads/fleek/9642314137838-1.jpg",
+    "/images/uploads/fleek/9642314137838-2.jpg",
+    "/images/uploads/fleek/9459828162798-1.jpg",
+    "/images/uploads/fleek/9459828162798-2.jpg"
+  ],
   "video": "",
   "video_url": "",
   "featured": false,
   "in_stock": true,
-  "sort": 97
+  "sort": 97,
+  "videos": []
 }
