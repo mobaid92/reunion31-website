@@ -25,7 +25,8 @@
       $(".dlg-styles", dlg).innerHTML = l.styles.map(s => `<li>${esc(s)}</li>`).join("");
       $(".dlg-sub", dlg).hidden = !l.styles.length;
       const media = l.photos.map((p, k) => `<img src="${esc(p)}" alt="${esc(l.title)} photo ${k + 1}" loading="lazy">`);
-      if (l.video) media.splice(1, 0, `<video controls playsinline preload="metadata"><source src="${esc(l.video)}"></video>`);
+      const vids = (l.videos || []).map(v => `<video controls playsinline preload="metadata"><source src="${esc(v)}" type="video/mp4"></video>`);
+      media.splice(Math.min(1, media.length), 0, ...vids);
       if (l.embed) media.push(l.embed);
       $(".dlg-media", dlg).innerHTML = media.join("");
       const msg = `Hi ReUnion 31, I'd like a quote for ${l.title} – ${l.cat}.`;

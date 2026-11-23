@@ -4,15 +4,36 @@
   "hero_image": "/images/uploads/ralph-lauren-puffer-vests-hero.jpg",
   "hero_video": "",
   "stats": [
-    { "value": "4.7/5", "label": "Buyer rating on Fleek" },
-    { "value": "229", "label": "Orders completed" },
-    { "value": "$15K", "label": "In wholesale sales" },
-    { "value": "27", "label": "Repeat buyers" }
+    {
+      "value": "4.8/5",
+      "label": "Buyer rating on Fleek"
+    },
+    {
+      "value": "70",
+      "label": "Buyer reviews"
+    },
+    {
+      "value": "34",
+      "label": "Repeat buyers"
+    },
+    {
+      "value": "271",
+      "label": "Bundles and pieces listed"
+    }
   ],
-  "stats_note": "Figures from our Fleek store, September 2026.",
+  "stats_note": "Figures from our Fleek store, November 2026.",
   "features": [
-    { "title": "Sorted by category", "text": "Every bundle is one category, so you only pay for pieces your store can sell." },
-    { "title": "Graded before packing", "text": "Each piece is checked by hand, and condition is noted on every quote." },
-    { "title": "Real photos first", "text": "We send photos or a video of your actual bundle before you pay." }
+    {
+      "title": "Sorted by category",
+      "text": "Every bundle is one category, so you only pay for pieces your store can sell."
+    },
+    {
+      "title": "Graded before packing",
+      "text": "Each piece is checked by hand, and condition is noted on every quote."
+    },
+    {
+      "title": "Real photos first",
+      "text": "We send photos or a video of your actual bundle before you pay."
+    }
   ]
 }

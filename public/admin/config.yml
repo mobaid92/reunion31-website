@@ -66,11 +66,12 @@ collections:
         required: false
         hint: The first photo is the cover. Drag to reorder.
         field: { label: Photo, name: image, widget: image }
-      - label: Video file (optional)
-        name: video
-        widget: file
+      - label: Videos (optional)
+        name: videos
+        widget: list
         required: false
-        hint: Short clip under 25 MB (about 30 seconds). For longer videos, use the link field below.
+        hint: Short clips under 25 MB each (about 30 seconds). For longer videos, use the link field below.
+        field: { label: Video, name: file, widget: file }
       - label: Video link (optional)
         name: video_url
         widget: string

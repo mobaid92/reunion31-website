@@ -31,6 +31,7 @@ const GALLERY = readDir("content/gallery").sort((a, b) => String(b.date || "").l
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const paras = (s) => String(s ?? "").split(/\n\s*\n/).map(p => p.trim()).filter(Boolean).map(p => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("");
 const catBySlug = Object.fromEntries(CATS.map(c => [c._slug, c]));
+const videosOf = (l) => [...(l.videos || []).map(v => typeof v === "string" ? v : v?.file), l.video].filter(Boolean);
 const photosOf = (l) => (l.photos || []).map(p => typeof p === "string" ? p : p?.image).filter(Boolean);
 const isVideoFile = (u) => /\.(mp4|webm|mov|m4v)(\?|$)/i.test(u || "");
 const waDigits = String(S.whatsapp || "").replace(/\D/g, "");
@@ -136,12 +137,13 @@ const ctaBand = () => `<section class="cta-band"><div class="wrap"><div class="c
 // listing card (catalogue + home)
 function card(l, i) {
   const ph = photosOf(l);
-  const hasVid = !!(l.video || l.video_url);
+  const nVid = videosOf(l).length + (l.video_url ? 1 : 0);
+  const hasVid = nVid > 0;
   const cat = catBySlug[l.category];
   const styles = l.styles || [];
   return `<article class="lot${ph.length ? " has-photo" : ""}" data-i="${i}" data-cat="${esc(l.category)}" data-brand="${esc(l.title)}" data-search="${esc([l.title, l.brand_note, cat?.name, ...styles, l.description].join(" ").toLowerCase())}">
   <button class="lot-open" type="button" aria-label="View ${esc(l.title)} ${esc(cat?.name || "")}">
-    ${ph.length ? `<div class="lot-photo">${img(ph[0], `${l.title} ${cat?.name || ""} from ReUnion 31 stock`)}${ph.length > 1 || hasVid ? `<span class="badge">${ph.length > 1 ? `${ph.length} photos` : ""}${ph.length > 1 && hasVid ? " · " : ""}${hasVid ? "Video" : ""}</span>` : ""}</div>` : hasVid ? `<div class="lot-photo lot-novid"><span class="badge">Video</span></div>` : ""}
+    ${ph.length ? `<div class="lot-photo">${img(ph[0], `${l.title} ${cat?.name || ""} from ReUnion 31 stock`)}${ph.length > 1 || hasVid ? `<span class="badge">${ph.length > 1 ? `${ph.length} photos` : ""}${ph.length > 1 && hasVid ? " · " : ""}${hasVid ? (nVid > 1 ? `${nVid} videos` : "Video") : ""}</span>` : ""}</div>` : hasVid ? `<div class="lot-photo lot-novid"><span class="badge">Video</span></div>` : ""}
     <div class="lot-body">
       <p class="lot-cat">${esc(cat?.name || "")}</p>
       <h3>${esc(l.title)}</h3>
@@ -153,7 +155,7 @@ function card(l, i) {
 }
 const listingData = (list) => list.map(l => ({
   title: l.title, cat: catBySlug[l.category]?.name || "", note: l.brand_note || "", styles: l.styles || [],
-  desc: l.description || "", photos: photosOf(l), video: l.video || "", embed: l.video_url ? embed(l.video_url) : ""
+  desc: l.description || "", photos: photosOf(l), videos: videosOf(l), embed: l.video_url ? embed(l.video_url) : ""
 }));
 const dataScript = (list) => `<script>window.LISTINGS=${JSON.stringify(listingData(list)).replace(/</g, "\\u003c")};window.QUOTE=${JSON.stringify({ wa: waDigits, email: S.email })};</script>`;
 const dialog = `<dialog class="lot-dialog" aria-labelledby="dlg-title"><div class="dlg-inner">
